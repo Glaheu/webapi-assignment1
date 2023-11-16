@@ -29,7 +29,7 @@ library.run()
 5. Run `node app.js` on your terminal and ensure you're in the right directory
 
 ## Functions
-
+### 1. Run program (Login/Register Choice)
 ```js
 library.run()
 ```
@@ -38,6 +38,7 @@ Description:
 
 This is the main function you have to run since this node module is menu driven. The function initiates the login or registration process for the user.
 
+### 2. Login
 ```js
 library.login()
 ```
@@ -46,6 +47,7 @@ Description:
 
 System will prompt the user to log in with username and password.
 
+### 3. Register
 ```js
 library.register()
 ```
@@ -54,6 +56,7 @@ Description:
 
 System will prompt the user to register an account with a username, password and to confirm the password.
 
+### 4. User Menu
 ```js
 library.userPrompt()
 ```
@@ -62,6 +65,7 @@ Description:
 
 System will prompt the user as a User account for actions.
 
+### 5. Admin Menu
 ```js
 library.adminPrompt()
 ```
@@ -70,6 +74,7 @@ Description:
 
 System will prompt user as an Admin account for actions.
 
+### 5. Get all Movies
 ```js
 library.getAllMovies()
 ```
@@ -78,6 +83,7 @@ Description:
 
 Return all movies in database.
 
+### 6. Get Movie by Title
 ```js
 library.getMovieByTitle(title);
 ```
@@ -86,6 +92,7 @@ Description:
 
 System shall find and print the called movie, if title is null, System will prompt user for movie title.
 
+### 7. Add Movie
 ```js
 library.addMovie()
 ```
@@ -94,6 +101,7 @@ Description:
 
 System shall prompt user for movie title, year, genre(s), director(s) and rating and be pushed to the movie database.
 
+### 8. Add Movie Screening
 ```js
 library.addMovieScreening()
 ```
@@ -102,6 +110,7 @@ Description:
 
 System shall prompt user for selected movie title, screening time, theatre, number of maximum seats add a new screening time to the database.
 
+### 9. Get all Available Movie Theatres
 ```js
 library.getAllAvailableMovieTheatres()
 ```
@@ -110,6 +119,7 @@ Description:
 
 Return all available movie screening records.
 
+### 10. Get all Fully Booked Movie Theatres
 ```js
 library.getAllFullyBookedMovieTheatres()
 ```
@@ -118,6 +128,7 @@ Description:
 
 Return all fully booked movie screening records.
 
+### 11. Modify Movie Details
 ```js
 library.editMovieDetails()
 ```
@@ -126,6 +137,7 @@ Description:
 
 System shall prompt user for movie to edit the details.
 
+### 12. Modify Screening Details
 ```js
 library.editMovieScreening()
 ```
@@ -134,6 +146,7 @@ Description:
 
 System shall prompt user for movie & screening time to edit.
 
+### 13. Delete Movie
 ```js
 library.deleteMovie()
 ```
@@ -142,6 +155,7 @@ Description:
 
 System shall prompt user for movie to delete.
 
+### 14. Delete Movie Screening
 ```js
 library.deleteMovieScreening()
 ```
@@ -150,6 +164,7 @@ Description:
 
 System shall prompt user to delete movie.
 
+### 15. Customer Purchases Ticket
 ```js
 library.customerPurchasesTicket()
 ```
@@ -158,6 +173,7 @@ Description:
 
 System shall prompt user for movie and number of tickets being purchased and increment the occupied seats by x number.
 
+### 15. Customer Refunds Ticket
 ```js
 library.customerRefundsTicket()
 ```
@@ -166,6 +182,7 @@ Description:
 
 System shall prompt user for movie and number of tickets being refunded and decrement the occupied seats by x number.
 
+### 15. Customer Changes Ticket
 ```js
 library.customerChangesMovieTicket()
 ```
