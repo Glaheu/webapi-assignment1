@@ -94,9 +94,9 @@ const userDatabase = [
     }
 ]
 
-loginOrRegisterPrompt();
+run();
 // Main Menu Prompt
-function loginOrRegisterPrompt() {
+function run() {
     rl.question(
         "================================================\n" +
         "|                  Movie Menu                  |\n" +
@@ -119,7 +119,7 @@ function loginOrRegisterPrompt() {
                     break;
                 default:
                     console.log("Invalid choice. Please enter a number between 1 and 3.");
-                    setTimeout(() => loginOrRegisterPrompt(), 1500);
+                    setTimeout(() => run(), 1500);
                     break;
             }
         });
@@ -148,7 +148,7 @@ function login() {
                     if (tryAgainOrMenu.toLowerCase() === 'try again') {
                         login();
                     } else {
-                        loginOrRegisterPrompt();
+                        run();
                     }
                 });
                 // Retry the login process
@@ -164,7 +164,7 @@ function register() {
 
         if (usernameExists) {
             console.log("Username is already taken. Please choose a different username.");
-            setTimeout(() => loginOrRegisterPrompt(), 1500);
+            setTimeout(() => run(), 1500);
         } else {
             // Find the maximum existing ID and increment it for the new user
             const maxId = Math.max(...userDatabase.map(user => parseInt(user.id)));
@@ -188,7 +188,7 @@ function register() {
                         checkUserAccountAndRedirectToMenuWithTimeout(newUser);
                     } else {
                         console.log("Password and confirmation do not match. Please try again.");
-                        setTimeout(() => loginOrRegisterPrompt(), 1500);
+                        setTimeout(() => run(), 1500);
                     }
                 });
             });
@@ -220,7 +220,7 @@ function userPrompt() {
                     getMovieByTitle();
                     break;
                 case 3:
-                    loginOrRegisterPrompt();
+                    run();
                     break;
                 default:
                     console.log("Invalid choice. Please enter a number between 1 and 3.");
@@ -295,7 +295,7 @@ function adminPrompt() {
                     customerChangesMovieTicket();
                     break;
                 case 14:
-                    loginOrRegisterPrompt();
+                    run();
                     break;
                 default:
                     console.log("Invalid choice. Please enter a number between 1 and 14.");
@@ -1000,7 +1000,7 @@ function customerChangesMovieTicket() {
 }
 
 module.exports = {
-    loginOrRegisterPrompt,
+    run,
     login,
     register,
     userPrompt,

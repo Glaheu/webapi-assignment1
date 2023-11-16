@@ -19,19 +19,24 @@ The Movie Ticket Booking System is a Node.js module that facilitates the managem
 1. Create a new file named `app.js`
 2. Import the module with the correct file path
     ```js
-    const library = require('./lennel_movieSystem.js');
+    const library = require('./Lennel_MovieInformationSystem.js');
     ```
 3. Use the const as a reference to exported functions
+4. key in the function 
+```js
+library.run()
+```
+5. Run `node app.js` on your terminal and ensure you're in the right directory
 
 ## Functions
 
 ```js
-library.loginOrRegisterPrompt()
+library.run()
 ```
 
 Description:
 
-Initiates the login or registration process for the user. This is the main function you have to run since this node module is menu driven.
+This is the main function you have to run since this node module is menu driven. The function initiates the login or registration process for the user.
 
 ```js
 library.login()
