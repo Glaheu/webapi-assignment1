@@ -173,7 +173,7 @@ Description:
 
 System shall prompt user for movie and number of tickets being purchased and increment the occupied seats by x number.
 
-### 15. Customer Refunds Ticket
+### 16. Customer Refunds Ticket
 ```js
 library.customerRefundsTicket()
 ```
@@ -182,7 +182,7 @@ Description:
 
 System shall prompt user for movie and number of tickets being refunded and decrement the occupied seats by x number.
 
-### 15. Customer Changes Ticket
+### 17. Customer Changes Ticket
 ```js
 library.customerChangesMovieTicket()
 ```
